@@ -1,0 +1,10 @@
+node_modules/
+/e2e/*.js
+/e2e/*.map
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
