@@ -1,0 +1,35 @@
+<div id="login_main" >
+  <h2>LOGIN</h2>
+
+    <mat-card class="offset-md-4 col-12 col-md-4">
+        <form [formGroup]="loginForm">
+        <div class="row">
+            <mat-form-field color="primary" class=" col-md-10 mb-4">
+                <input matInput placeholder="Username" formControlName="username" required>
+                <mat-error *ngIf="username.invalid && username.touched">
+                    Your Username does not look right
+                 </mat-error>
+            </mat-form-field>
+        </div>
+       
+        <div class="row">
+            <mat-form-field class="col-10 col-md-10 mb-4">
+                <input matInput placeholder="Password" formControlName="password" required>
+                <mat-hint align="end">Must have one letter and one number</mat-hint>
+                <mat-error  *ngIf="password.invalid && password.touched"> The password is not right</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-checkbox formControlName="remember" color="primary" class="col-12 mb-3">Remember Me</mat-checkbox>
+        </div>
+        <div class="row justify-content-center"> 
+            <button mat-raised-button [disabled]="loginForm.invalid" color="primary" class="col-sm-4">LOGIN</button>       
+        </div>
+        <div class="row">
+                <button mat-raised-button (click)="openSignup()">Create Account</button> 
+        </div>
+        </form>
+     </mat-card>
+    
+</div>

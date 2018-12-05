@@ -1,0 +1,33 @@
+*{
+
+    padding: 0px;
+    margin : 0px;
+}
+
+#home_main
+{
+    height: 100vh;
+    width:100%;
+    margin-bottom: 1%;
+    background-image: url('../../assets/images/main1_img.jpeg'); 
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+
+
+#logo
+{
+    
+    font-family:'Amatic SC', cursive;; /* bavro,ikaro sans*/
+    font-size: 6vw;
+    color: rgb(100, 100, 100);
+}
+
+#info
+{
+    font-size: 200%;
+    font-family: bavro, Geneva, Tahoma, sans-serif;
+}
+
