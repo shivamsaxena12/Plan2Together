@@ -24,7 +24,7 @@
             <mat-checkbox formControlName="remember" color="primary" class="col-12 mb-3">Remember Me</mat-checkbox>
         </div>
         <div class="row justify-content-center"> 
-            <button mat-raised-button [disabled]="loginForm.invalid" color="primary" class="col-sm-4">LOGIN</button>       
+           <a routerLink="/dashboard"> <button mat-raised-button [disabled]="loginForm.invalid" color="primary" class="col-sm-4">LOGIN</button>   </a>    
         </div>
         <div class="row">
                 <button mat-raised-button (click)="openSignup()">Create Account</button> 

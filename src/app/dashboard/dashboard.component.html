@@ -1,0 +1,34 @@
+
+<div class="container-fluid" style="border:1px solid black;">
+  <div class="row">
+    <div class="col-md-3" style="border:1px solid black;">
+      <p>User Info</p>
+    </div>
+
+    <div id="to_do_container" class="col-sm-9 col-md-6" >
+      
+      <div *ngFor="let entr of entries">
+          <h4>{{entr.id}}</h4>
+      <div style="height:500px;"  id="entr.id" class="section scrollspy to_do card blue-grey darken-1" >
+        <div class="card-content white-text">
+          <span class="card-title">Card Title</span>
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+    <div class="d-none d-sm-block col-sm-3" style="border:1px solid black;"  >
+      <p>TIMLINE</p>  
+      <ul class="section table-of-contents fixed">
+        <li class="time_line" *ngFor="let entr of entries"><a href="#entr.id" (click)="show(entr)">{{entr.id}}</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+ 
+

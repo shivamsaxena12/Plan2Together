@@ -1,0 +1,19 @@
+@import "./../../../node_modules/materialize-css/dist/css/materialize.css";
+
+
+#to_do_container
+{
+    margin-top: 50px;
+}
+.to_do
+{
+    border:1px solid black;
+    margin-bottom: 100px;
+}
+
+.table-of-contents li {
+    
+    margin-bottom:40px;
+    font-size: 40px; 
+ 
+  }
